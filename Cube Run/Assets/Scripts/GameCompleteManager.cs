@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameCompleteManager : MonoBehaviour
 {
+    //public BoxCollider collider1;
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +12,5 @@ public class GameCompleteManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
