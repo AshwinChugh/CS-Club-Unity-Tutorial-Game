@@ -6,6 +6,7 @@ public class MainPlayerManager : MonoBehaviour
 {
     public Rigidbody rb;
     private float health;
+    public float multiplier;
 
     void Start()
     {
@@ -21,13 +22,13 @@ public class MainPlayerManager : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             var position = transform.position;
-            position.x -= 0.1f;
+            position.x -= 0.1f*multiplier;
             transform.position = position;
         }
         if(Input.GetKey(KeyCode.RightArrow))
         {
             var position = transform.position;
-            position.x += 0.1f;
+            position.x += 0.1f*multiplier;
             transform.position = position;
         }
 
